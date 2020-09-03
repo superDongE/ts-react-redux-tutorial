@@ -29,6 +29,8 @@ const counter = createReducer<CounterState, CounterAction>(initalState)
   .handleAction(INCREASE_BY, (state, action) => ({
     count: state.count + action.payload,
   }));
+//
+
 // const counter = createReducer<CounterState, CounterAction>(initalState, {
 //   [INCREASE]: (state) => ({ count: state.count + 1 }),
 //   [DECREASE]: (state) => ({ count: state.count - 1 }),
